@@ -6,3 +6,5 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const ingredientsEl = document.createElement();
