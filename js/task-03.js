@@ -12,3 +12,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// const imagesItem = images.map(element => {
+//   const itemRef = document.createElement('li');
+//   itemRef.textContent = element
+// })
+  
+//1 добавляем список
+const imagesItem = images.map(image => {
+  const imageRef = `<li><img src="${image.url}" alt="${image.alt}"></li>`;
+  
+
+  document.querySelector(".gallery").insertAdjacentHTML("beforebegin", imageRef);
+  
+
+
+  return imageRef;
+}).join("");
+
+// imagesItem.classList.add('item')
