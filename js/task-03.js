@@ -23,7 +23,7 @@ const imagesItem = images.map(image => {
   const imageRef = `<li><img src="${image.url}" alt="${image.alt}"></li>`;
   
 
-  document.querySelector(".gallery").insertAdjacentHTML("beforebegin", imageRef);
+  document.querySelector(".gallery").insertAdjacentHTML("afterbegin", imageRef);
   
 
 
